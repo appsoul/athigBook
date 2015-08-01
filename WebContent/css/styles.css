@@ -1,2 +1,104 @@
 @CHARSET "UTF-8";
 
+.textLogo {
+	padding-left: 10px;
+}
+a {
+  color: #1fa4cd;
+  text-decoration: none;
+}
+.labellogin{
+	font-weight: normal;
+	padding-right: 12px;
+}
+#mainContainer  header  .cartItem {
+	float:right;
+	padding-top: 90PX;	
+}
+.cartItemCount{
+	font-weight: bold;
+  	color: red;
+}
+.login{
+	margin: 12px 0px 12px 0px;
+    width: 100%;
+/*     font-size: 12px;
+    line-height: 16px; */
+    padding: 2px 10px 2px 10px;
+}
+.mainMenu{
+	padding: 0 20px;
+  	display: block;
+  	font-size: 16px;
+  	text-shadow: black 0px 1px 4px;
+  	border-top-left-radius: 1em;
+  	border-top-right-radius: 1em;
+}
+.mainMenu li a{	
+	color:white;
+}
+.nav > li > a:hover,
+.nav > li > a:focus {
+  text-decoration: none;
+  background: none;
+  text-shadow: white 0px 1px 4px;
+}
+.navbar-default .navbar-nav > li > a {
+	color: white;
+}
+.gradient{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffb76b+45,ff7f04+93 */
+	background: rgb(255,183,107); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(255,183,107,1) 45%, rgba(255,127,4,1) 93%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(45%,rgba(255,183,107,1)), color-stop(93%,rgba(255,127,4,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(255,183,107,1) 45%,rgba(255,127,4,1) 93%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(255,183,107,1) 45%,rgba(255,127,4,1) 93%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(255,183,107,1) 45%,rgba(255,127,4,1) 93%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(255,183,107,1) 45%,rgba(255,127,4,1) 93%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb76b', endColorstr='#ff7f04',GradientType=0 ); /* IE6-9 */
+
+}
+.grayGradient{
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f3f3f3+25,ffffff+100 */
+background: rgb(243,243,243); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(243,243,243,1) 25%, rgba(255,255,255,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(25%,rgba(243,243,243,1)), color-stop(100%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(243,243,243,1) 25%,rgba(255,255,255,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(243,243,243,1) 25%,rgba(255,255,255,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(243,243,243,1) 25%,rgba(255,255,255,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(243,243,243,1) 25%,rgba(255,255,255,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3f3f3', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+
+}
+.titleBar{
+	border: 1px solid #DBDBDB;
+	margin:5px 0px 10px 0px;
+}
+.titleBar a {
+  	color: #1fa4cd;	
+  	font-size: 16px; 
+  	line-height: 40px;
+}
+.smallText{
+    position: relative;
+    float:right;
+   
+}
+.thumbnail{
+	border:none;
+	padding:0px;
+}
+.bigAppstore {
+  height: 76px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.about{
+  margin-bottom: 20px;
+  list-style: none;
+  padding-left: 0px;
+  padding-left:10px;
+}
+.input-group{
+ padding-top:10px;
+}
