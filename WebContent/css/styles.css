@@ -114,3 +114,33 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3f3f3', end
     text-align: center;
     border: 1px solid #000;
 }
+
+.header-mobile {
+	padding-top: 100px;
+}
+.navbar-mobile .btn-group > .btn {
+	border-radius: 0;
+}
+.btn-icon {
+	display: block;
+}
+.btn.btn-app .badge {
+    position: absolute;
+    top: -5px;
+    right: 20px;
+}
+
+.btn .bg-blue {
+	background-color: #367fa9;
+}
+.btn .badge.bg-blue {
+	color: #fff;
+}
+
+.navbar-default {
+	background-color: #fff;
+}
+.navbar-default .navbar-brand {
+	color: #367fa9;
+	text-transform: uppercase;
+}
