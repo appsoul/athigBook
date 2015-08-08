@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="th">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,79 +15,378 @@ $(function() {
 	$("#footer").load("footer.html");
 });				
 </script>
+<script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
 </head>
 <body>
-<header id="header"></header>
+<header id="header" style="margin-bottom:20px"></header>
 
 <div class="container">
 	<div class="row">
-		
-		<div class="col-md-12" >
-			<div class="titleBar grayGradient">
-			  <img src="images/soul_icon.png">
-			  <a href="#">หนังสือธรรมะทั่วไป</a>
-			  <a class="pull-right" href="http://www.facebook.com/athingbooks" target="_blank">
-			  	<img src="images/fb_like.png" width="220" height="20" alt="Like A Thing Book on Facebook">
-		      </a>
-			  <a class="pull-right" href="#">ดูทั้งหมด</a>  
-			</div>
-		</div>
-	</div>
-</div>	
-<div class="container">
-	<div class="row">
 		<div class="col-md-9">
-			<div class="product-slider">
-			    <div class="item">1</div>
-			    <div class="item">2</div>
-			    <div class="item">3</div>
-			    <div class="item">4</div>
-			    <div class="item">5</div>
-			    <div class="item">6</div>
+			<section>
+				<h3 class="home-heading-bar">
+					<img src="images/soul_icon.png"><a href="#">หนังสือธรรมะทั่วไป</a>
+					<a class="small pull-right hidden-xxs" href="#">ดูเพิ่ม</a>
+				</h3>
+				<div class="slider product-slider">
+				    <div class="item">
+				    	<div class="product-details">
+					    	<span class="badge badge-discount"><small>ลด</small><br>77%</span>
+							<img src="images/products/book-1.jpg">
+							<h5><a href="#">สงสัยมั้ย ? ธรรมะ ฉบับ ทุกข์ไม่มีจริง</a></h5>
+							<h6>ทุกข์และสุขเกิดขึ้น เพราะตัวเราเลือกที่จะยึดกันไปเองทั้งนั้น</h6>
+							<p>ราคา <span class="price price-current">35</span> บาท<br> <del class="price">ปกติ 150 บาท</del></p>
+							<a class="order-btn" href="#">
+								<img src="images/order_button.png">
+							</a>
+						</div>
+						<form class="order-form" method="post">
+							<div class="order-details">
+								<p>สงสัยมั้ย ? ธรรมะ ฉบับ ทุกข์ไม่มีจริง</p>
+								<div class="input-group">
+									<span class="input-group-addon"><label>จำนวน</label></span>
+									<input class="form-control" type="number" min="1" value="1">
+								</div>
+								<div class="input-group">
+									<span class="input-group-addon"><label>ขนาด</label></span>
+									<select class="form-control">
+										<option>S</option>
+										<option>M</option>
+										<option>XL</option>
+									</select>
+								</div>
+							</div>
+							<button class="btn btn-warning btn-block" type="submit">ใส่ตระกร้า</button>
+							<button class="btn btn-default btn-block" type="button" data-as-action="close">ยกเลิก</button>
+						</form>
+					</div>
+				    <div class="item">
+						<span class="badge badge-discount"><small>ลด</small><br>10%</span>
+						<img src="images/products/book-2.jpg">
+						<h5><a href="#">คิดง่ายๆ อย่างนิทานธรรมะ</a></h5>
+						<h6>"สิ่งที่ยึดติดได้ ยังไม่มีจริง แล้วจะบอกว่าปล่อยวางไม่ได้ ไปได้อย่างไร"</h6>
+						<p>ราคา <span class="price price-current">144</span> บาท<br><del class="price">ปกติ 160 บาท</del></p>
+						<a class="order-btn" href="#">
+							<img src="images/order_button.png">
+						</a>
+					</div>
+				    <div class="item">
+				    	<span class="badge badge-discount"><small>ลด</small><br>10%</span>
+						<img src="images/products/book-3.jpg">
+						<h5><a href="#">สงสัยมั้ย ? ธรรมะ ฉบับ เหตุสมควรทุกข์ไม่มีในโลก</a></h5>
+						<h6>"ความทุกข์ไม่เคยมีจริง แต่ทุกข์จริงถ้ายังไม่รู้..."</h6>
+						<p>ราคา <span class="price price-current">144</span> บาท<br><del class="price">ปกติ 160 บาท</del></p>
+						<a class="order-btn" href="#">
+							<img src="images/order_button.png">
+						</a>
+				    </div>
+				    <div class="item">
+				    	<span class="badge badge-discount"><small>ลด</small><br>10%</span>
+						<img src="images/products/book-4.jpg">
+						<h5><a href="#">สงสัยมั้ย ? ธรรมะ พุทธทาส คู่มือมนุษย์ ตอนที่ 1</a></h5>
+						<h6>ท่านเข้าใจพุทธศาสนาถูกแล้วจริงเหรอ...</h6>
+						<p>ราคา <span class="price price-current">144</span> บาท<br><del class="price">ปกติ 160 บาท</del></p>
+						<a class="order-btn" href="#">
+							<img src="images/order_button.png">
+						</a>
+				    </div>
+				    <div class="item">
+				    	<span class="badge badge-discount"><small>ลด</small><br>10%</span>
+						<img src="images/products/book-5.jpg">
+						<h5><a href="#">สงสัยมั้ย ? ธรรมะ ฉบับ ทุกข์ไม่มีจริง</a></h5>
+						<h6>ทุกข์และสุขเกิดขึ้น เพราะตัวเราเลือกที่จะยึดกันไปเองทั้งนั้น</h6>
+						<p>ราคา <span class="price price-current">144</span> บาท<br><del class="price">ปกติ 160 บาท</del></p>
+						<a class="order-btn" href="#">
+							<img src="images/order_button.png">
+						</a>
+				    </div>
+				    <div class="item">
+				    	<span class="badge badge-discount"><small>ลด</small><br>10%</span>
+						<img src="images/products/book-6.jpg">
+						<h5><a href="#">สงสัยมั้ยธรรมะ พุทธทาส ฉบับ เช่นนั้นเอง</a></h5>
+						<h6>"เช่นนั้นเอง" ทุกอย่างเป็นเช่นนั้นเอง ตามเรื่องที่มันเป็น</h6>
+						<p>ราคา <span class="price price-current">135</span> บาท<br><del class="price">ปกติ 150 บาท</del></p>
+						<a class="order-btn" href="#">
+							<img src="images/order_button.png">
+						</a>
+				    </div>
 			  </div>
+		  </section>
+		  <section>
+				<h3 class="home-heading-bar">
+					<img src="images/soul_icon.png"><a href="#">หนังสือธรรมทาน</a>
+					<a class="small pull-right hidden-xxs" href="#">ดูเพิ่ม</a>
+				</h3>
+				<div class="slider product-slider">
+				    <div class="item">
+						<img src="images/products/book-7.jpg">
+						<h5><a href="#">ธรรมะธรรมทาน: กลัวแล้วได้อะไร</a></h5>
+						<h6>คุณกำลังกลัวสิ่งที่คิดไปเอง อยู่หรือเปล่า...?</h6>
+						<p>ราคา <span class="price price-current">8</span> บาท</p>
+						<a class="order-btn" href="#">
+							<img src="images/order_button.png">
+						</a>
+					</div>
+				    <div class="item">
+						<img src="images/products/book-8.jpg">
+						<h5><a href="#">ธรรมะธรรมทาน: ตัวของเราเงาของใคร</a></h5>
+						<h6>แท้จริงคุณเป็นคนอย่างไร หรือเป็นเพียงแค่เงาสะท้อนของคนอื่น...</h6>
+						<p>ราคา <span class="price price-current">8</span> บาท</p>
+						<a class="order-btn" href="#">
+							<img src="images/order_button.png">
+						</a>
+					</div>
+				    <div class="item">
+						<img src="images/products/book-9.jpg">
+						<h5><a href="#">ธรรมะธรรมทาน: ทุกข์เพราะคำหรือเพราะคุณ</a></h5>
+						<h6>นี่...คุณยังทุกข์ เพราะคำพูดของคนอื่นอยู่อีกเหรอ...?</h6>
+						<p>ราคา <span class="price price-current">8</span> บาท</p>
+						<a class="order-btn" href="#">
+							<img src="images/order_button.png">
+						</a>
+					</div>
+				    <div class="item">
+						<img src="images/products/book-10.jpg">
+						<h5><a href="#">ธรรมะธรรมทาน: หนีทำไมความทุกข์</a></h5>
+						<h6>คุณทุกข์ เพราะสิ่งใด..? แล้วจะหนี... ไปทำไม..?</h6>
+						<p>ราคา <span class="price price-current">8</span> บาท</p>
+						<a class="order-btn" href="#">
+							<img src="images/order_button.png">
+						</a>
+					</div>
+			  </div>
+		  </section>
+		  <section>
+				<h3 class="home-heading-bar">
+					<img src="images/soul_icon.png"><a href="#">ของที่ระลึก</a>
+					<a class="small pull-right hidden-xxs" href="#">ดูเพิ่ม</a>
+				</h3>
+				<div class="slider product-slider">
+				    <div class="item">
+				    	<span class="badge badge-discount"><small>ลด</small><br>77%</span>
+						<img src="images/products/svn-1.jpg">
+						<h5><a href="#">เสื้อยืดธรรมทาน (หญิง) "ปล่อยวาง"</a></h5>
+						<h6>ปล่อยวาง คือทางดับทุกข์ "ยึดติดสิ่งไหน ทุกข์เพราะสิ่งนั้น"</h6>
+						<p>ราคา <span class="price price-current">8</span> บาท</p>
+						<a class="order-btn" href="#">
+							<img src="images/order_button.png">
+						</a>
+					</div>
+				    <div class="item">
+				    	<span class="badge badge-discount"><small>ลด</small><br>20%</span>
+						<img src="images/products/svn-2.jpg">
+						<h5><a href="#">เสื้อยืดธรรมทาน (ชาย) "ปล่อยวาง"</a></h5>
+						<h6>ปล่อยวาง คือทางดับทุกข์ "ยึดติดสิ่งไหน ทุกข์เพราะสิ่งนั้น"</h6>
+						<p>ราคา <span class="price price-current">200</span> บาท<br><del class="price">ปกติ 250 บาท</del></p>
+						<a class="order-btn" href="#">
+							<img src="images/order_button.png">
+						</a>
+					</div>
+				    <div class="item">
+				    	<span class="badge badge-discount"><small>ลด</small><br>20%</span>
+						<img src="images/products/svn-3.jpg">
+						<h5><a href="#">เสื้อยืดธรรมทาน (หญิง) "สติ"</a></h5>
+						<h6>สติ มีแล้วไม่ทุกข์ "เมื่อไหร่ที่ทุกข์ เมื่อนั้นไม่มีสติ"</h6>
+						<p>ราคา <span class="price price-current">200</span> บาท<br><del class="price">ปกติ 250 บาท</del></p>
+						<a class="order-btn" href="#">
+							<img src="images/order_button.png">
+						</a>
+					</div>
+				    <div class="item">
+						<img src="images/products/svn-4.jpg">
+						<h5><a href="#">ถุงผ้าธรรมะ</a></h5>
+						<h6>ปล่อยวาง แล้วมีสิ่งไหนบ้าง ที่คิดว่ายึดติดได้...?</h6>
+						<p>ราคา <span class="price price-current">59</span> บาท</p>
+						<a class="order-btn" href="#">
+							<img src="images/order_button.png">
+						</a>
+					</div>
+			  </div>
+		  </section>
+		  <div class="row">
+		  	<div class="col-md-6">
+		  		<section class="feature-box">
+				  	<h3 class="title-bar">
+						<a href="#"><img src="images/soul_icon.png">การ์ตูนธรรมะ</a>
+					</h3>
+					<div class="slider">
+					    <div class="item">
+					    	<div class="media">
+				    			<div class="media-middle">
+					    			<a href="#">
+					    				<img class="media-object" src="images/blog/cartoon-1.jpg">
+					    			</a>
+				    			</div>
+				    			<div class="media-body">
+				    				<h4 class="media-heading"><a href="#">:: หมื่นตา - เป็นหนึ่งเดียวกับเสี้ยวแสง ::</a></h4>
+				    				<p>กับความจริงแห่งชีวิต --- ต้องรู้ทัน <a class="more" href="#">อ่านต่อ</a></p>
+				    			</div>
+				    		</div>
+					    </div>
+					    <div class="item">
+					    	<div class="media">
+				    			<div class="media-middle">
+					    			<a href="#">
+					    				<img class="media-object" src="images/blog/cartoon-2.jpg">
+					    			</a>
+				    			</div>
+				    			<div class="media-body">
+				    				<h4 class="media-heading"><a href="#">:: หมื่นตา - รู้ทันความจริงแห่งชีวิต ::</a></h4>
+				    				<p>กับความจริงแห่งชีวิต --- ต้องรู้ทัน <a class="more" href="#">อ่านต่อ</a></p>
+				    			</div>
+				    		</div>
+					    </div>
+			    	</div>
+			    	
+			    	<!-- <div class="item">
+			    		<div class="media">
+			    			<div class="media-left">
+				    			<a href="#">
+				    				<img class="media-object" src="images/blog/cartoon-1.jpg">
+				    			</a>
+			    			</div>
+			    			<div class="media-body">
+			    				<h5 class="media-heading"><b><a href="#">:: หมื่นตา - เป็นหนึ่งเดียวกับเสี้ยวแสง ::</a></b></h5>
+			    				<p>กับความจริงแห่งชีวิต --- ต้องรู้ทัน <a class="more" href="#">อ่านต่อ</a></p>
+			    			</div>
+			    		</div>
+			    	</div>
+			    	<div class="item">
+			    		<ul class="media-list">
+			    			<li class="media">
+			    				<div class="media-left">
+				    				<a href="#">
+					    				<img class="media-object" src="images/blog/cartoon-1.jpg">
+					    			</a>
+				    			</div>
+				    			<div class="media-body">
+				    				<h5 class="media-heading"><a href="#">:: หมื่นตา - เป็นหนึ่งเดียวกับเสี้ยวแสง ::</a></h5>
+				    				<p>กับความจริงแห่งชีวิต --- ต้องรู้ทัน <a class="more" href="#">อ่านต่อ</a></p>
+				    			</div>
+			    			</li>
+			    			<li class="media">
+			    				<div class="media-left">
+				    				<a href="#">
+					    				<img class="media-object" src="images/blog/cartoon-1.jpg">
+					    			</a>
+				    			</div>
+				    			<div class="media-body">
+				    				<h5 class="media-heading"><a href="#">:: หมื่นตา - เป็นหนึ่งเดียวกับเสี้ยวแสง ::</a></h5>
+				    				<p>กับความจริงแห่งชีวิต --- ต้องรู้ทัน <a class="more" href="#">อ่านต่อ</a></p>
+				    			</div>
+			    			</li>
+			    			<li class="media">
+			    				<div class="media-left">
+				    				<a href="#">
+					    				<img class="media-object" src="images/blog/cartoon-1.jpg">
+					    			</a>
+				    			</div>
+				    			<div class="media-body">
+				    				<h5 class="media-heading"><a href="#">:: หมื่นตา - เป็นหนึ่งเดียวกับเสี้ยวแสง ::</a></h5>
+				    				<p>กับความจริงแห่งชีวิต --- ต้องรู้ทัน <a class="more" href="#">อ่านต่อ</a></p>
+				    			</div>
+			    			</li>
+			    		</ul>
+			    	</div> -->
+				</section>
+		  	</div>
+		  	<div class="col-md-6">
+		  		<section class="feature-box">
+				  	<h3 class="title-bar">
+						<a href="#"><img src="images/soul_icon.png">บทความน่าอ่าน</a>
+					</h3>
+					<div class="slider">
+					    <div class="item">
+					    	<div class="media">
+				    			<div class="media-middle">
+					    			<a href="#">
+					    				<img class="media-object" src="images/blog/gen-1.jpg">
+					    			</a>
+				    			</div>
+				    			<div class="media-body">
+				    				<h4 class="media-heading"><a href="#">เข้าพรรษา ธรรมทาน</a></h4>
+				    				<p>โครงการ "ธรรมะธรรมทาน" สู่การให้เพื่อสังคมปล่อยวาง... <a class="more" href="#">อ่านต่อ</a></p>
+				    			</div>
+				    		</div>
+					    </div>
+					    <div class="item">
+					    	<div class="media">
+				    			<div class="media-middle">
+					    			<a href="#">
+					    				<img class="media-object" src="images/blog/gen-2.jpg">
+					    			</a>
+				    			</div>
+				    			<div class="media-body">
+				    				<h4 class="media-heading"><a href="#">ทำบุญง่ายๆ ได้สติ</a></h4>
+				    				<p>ไม่ต้องลงทุนมากมาย คุณก็สามารถแจกธรรมะเป็นธรรมทานได้แล้ว!! <a class="more" href="#">อ่านต่อ</a></p>
+				    			</div>
+				    		</div>
+					    </div>
+			    	</div>
+				</section>
+		  	</div>
+		  </div>
 		</div>
-	<div class="col-md-3">
-		<div>
-			<img class="bigAppstore" src="images/appstore.png" alt="Available on AppStore">
-		</div>
-		<div>
-			<a href="#" class="thumbnail">
-	          <img data-src="holder.js/100%x180" alt="100%x180" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTcxIiBoZWlnaHQ9IjE4MCIgdmlld0JveD0iMCAwIDE3MSAxODAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzEwMCV4MTgwCkNyZWF0ZWQgd2l0aCBIb2xkZXIuanMgMi42LjAuCkxlYXJuIG1vcmUgYXQgaHR0cDovL2hvbGRlcmpzLmNvbQooYykgMjAxMi0yMDE1IEl2YW4gTWFsb3BpbnNreSAtIGh0dHA6Ly9pbXNreS5jbwotLT48ZGVmcz48c3R5bGUgdHlwZT0idGV4dC9jc3MiPjwhW0NEQVRBWyNob2xkZXJfMTRlZGU0NDYwODIgdGV4dCB7IGZpbGw6I0FBQUFBQTtmb250LXdlaWdodDpib2xkO2ZvbnQtZmFtaWx5OkFyaWFsLCBIZWx2ZXRpY2EsIE9wZW4gU2Fucywgc2Fucy1zZXJpZiwgbW9ub3NwYWNlO2ZvbnQtc2l6ZToxMHB0IH0gXV0+PC9zdHlsZT48L2RlZnM+PGcgaWQ9ImhvbGRlcl8xNGVkZTQ0NjA4MiI+PHJlY3Qgd2lkdGg9IjE3MSIgaGVpZ2h0PSIxODAiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSI2MSIgeT0iOTQuNSI+MTcxeDE4MDwvdGV4dD48L2c+PC9nPjwvc3ZnPg==" data-holder-rendered="true" style="height: 180px; width: 100%; display: block;">
-	        </a>
-		</div>
-		<div class="titleBar grayGradient" >
-		 <a href="#"  style="padding-left:10px;"><img src="images/soul_icon.png">Facebook</a> 
-		</div>
-		<div>
-			<a href="#" class="thumbnail">
-	          <img data-src="holder.js/100%x180" alt="Facebook" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTcxIiBoZWlnaHQ9IjE4MCIgdmlld0JveD0iMCAwIDE3MSAxODAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzEwMCV4MTgwCkNyZWF0ZWQgd2l0aCBIb2xkZXIuanMgMi42LjAuCkxlYXJuIG1vcmUgYXQgaHR0cDovL2hvbGRlcmpzLmNvbQooYykgMjAxMi0yMDE1IEl2YW4gTWFsb3BpbnNreSAtIGh0dHA6Ly9pbXNreS5jbwotLT48ZGVmcz48c3R5bGUgdHlwZT0idGV4dC9jc3MiPjwhW0NEQVRBWyNob2xkZXJfMTRlZGU0NDYwODIgdGV4dCB7IGZpbGw6I0FBQUFBQTtmb250LXdlaWdodDpib2xkO2ZvbnQtZmFtaWx5OkFyaWFsLCBIZWx2ZXRpY2EsIE9wZW4gU2Fucywgc2Fucy1zZXJpZiwgbW9ub3NwYWNlO2ZvbnQtc2l6ZToxMHB0IH0gXV0+PC9zdHlsZT48L2RlZnM+PGcgaWQ9ImhvbGRlcl8xNGVkZTQ0NjA4MiI+PHJlY3Qgd2lkdGg9IjE3MSIgaGVpZ2h0PSIxODAiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSI2MSIgeT0iOTQuNSI+MTcxeDE4MDwvdGV4dD48L2c+PC9nPjwvc3ZnPg==" data-holder-rendered="true" style="height: 180px; width: 100%; display: block;">
-	        </a>
-		</div>
-		<div class="titleBar grayGradient" >
-		  <a href="#" style="padding-left:10px;"><img src="images/soul_icon.png">ข่าวสาร-กิจกรรม</a>
-		</div>				
-		<div>
-			<a href="#" class="thumbnail">
-	          <img data-src="holder.js/100%x180" alt="Facebook" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTcxIiBoZWlnaHQ9IjE4MCIgdmlld0JveD0iMCAwIDE3MSAxODAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzEwMCV4MTgwCkNyZWF0ZWQgd2l0aCBIb2xkZXIuanMgMi42LjAuCkxlYXJuIG1vcmUgYXQgaHR0cDovL2hvbGRlcmpzLmNvbQooYykgMjAxMi0yMDE1IEl2YW4gTWFsb3BpbnNreSAtIGh0dHA6Ly9pbXNreS5jbwotLT48ZGVmcz48c3R5bGUgdHlwZT0idGV4dC9jc3MiPjwhW0NEQVRBWyNob2xkZXJfMTRlZGU0NDYwODIgdGV4dCB7IGZpbGw6I0FBQUFBQTtmb250LXdlaWdodDpib2xkO2ZvbnQtZmFtaWx5OkFyaWFsLCBIZWx2ZXRpY2EsIE9wZW4gU2Fucywgc2Fucy1zZXJpZiwgbW9ub3NwYWNlO2ZvbnQtc2l6ZToxMHB0IH0gXV0+PC9zdHlsZT48L2RlZnM+PGcgaWQ9ImhvbGRlcl8xNGVkZTQ0NjA4MiI+PHJlY3Qgd2lkdGg9IjE3MSIgaGVpZ2h0PSIxODAiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSI2MSIgeT0iOTQuNSI+MTcxeDE4MDwvdGV4dD48L2c+PC9nPjwvc3ZnPg==" data-holder-rendered="true" style="height: 180px; width: 100%; display: block;">
-	        </a>
-		</div>		
-		<div>
-			<a href="#" class="thumbnail">
-	          <img data-src="holder.js/100%x180" alt="Facebook" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTcxIiBoZWlnaHQ9IjE4MCIgdmlld0JveD0iMCAwIDE3MSAxODAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzEwMCV4MTgwCkNyZWF0ZWQgd2l0aCBIb2xkZXIuanMgMi42LjAuCkxlYXJuIG1vcmUgYXQgaHR0cDovL2hvbGRlcmpzLmNvbQooYykgMjAxMi0yMDE1IEl2YW4gTWFsb3BpbnNreSAtIGh0dHA6Ly9pbXNreS5jbwotLT48ZGVmcz48c3R5bGUgdHlwZT0idGV4dC9jc3MiPjwhW0NEQVRBWyNob2xkZXJfMTRlZGU0NDYwODIgdGV4dCB7IGZpbGw6I0FBQUFBQTtmb250LXdlaWdodDpib2xkO2ZvbnQtZmFtaWx5OkFyaWFsLCBIZWx2ZXRpY2EsIE9wZW4gU2Fucywgc2Fucy1zZXJpZiwgbW9ub3NwYWNlO2ZvbnQtc2l6ZToxMHB0IH0gXV0+PC9zdHlsZT48L2RlZnM+PGcgaWQ9ImhvbGRlcl8xNGVkZTQ0NjA4MiI+PHJlY3Qgd2lkdGg9IjE3MSIgaGVpZ2h0PSIxODAiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSI2MSIgeT0iOTQuNSI+MTcxeDE4MDwvdGV4dD48L2c+PC9nPjwvc3ZnPg==" data-holder-rendered="true" style="height: 80px; width: 100%; display: block;">
-	        </a>
-		</div>	
-		<div>
-			<a href="#" class="thumbnail">
-	          <img data-src="holder.js/100%x180" alt="Facebook" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTcxIiBoZWlnaHQ9IjE4MCIgdmlld0JveD0iMCAwIDE3MSAxODAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzEwMCV4MTgwCkNyZWF0ZWQgd2l0aCBIb2xkZXIuanMgMi42LjAuCkxlYXJuIG1vcmUgYXQgaHR0cDovL2hvbGRlcmpzLmNvbQooYykgMjAxMi0yMDE1IEl2YW4gTWFsb3BpbnNreSAtIGh0dHA6Ly9pbXNreS5jbwotLT48ZGVmcz48c3R5bGUgdHlwZT0idGV4dC9jc3MiPjwhW0NEQVRBWyNob2xkZXJfMTRlZGU0NDYwODIgdGV4dCB7IGZpbGw6I0FBQUFBQTtmb250LXdlaWdodDpib2xkO2ZvbnQtZmFtaWx5OkFyaWFsLCBIZWx2ZXRpY2EsIE9wZW4gU2Fucywgc2Fucy1zZXJpZiwgbW9ub3NwYWNlO2ZvbnQtc2l6ZToxMHB0IH0gXV0+PC9zdHlsZT48L2RlZnM+PGcgaWQ9ImhvbGRlcl8xNGVkZTQ0NjA4MiI+PHJlY3Qgd2lkdGg9IjE3MSIgaGVpZ2h0PSIxODAiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSI2MSIgeT0iOTQuNSI+MTcxeDE4MDwvdGV4dD48L2c+PC9nPjwvc3ZnPg==" data-holder-rendered="true" style="height: 80px; width: 100%; display: block;">
-	        </a>
-		</div>	
-		<div>
-			<a href="#" class="thumbnail">
-	          <img data-src="holder.js/100%x180" alt="Facebook" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTcxIiBoZWlnaHQ9IjE4MCIgdmlld0JveD0iMCAwIDE3MSAxODAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzEwMCV4MTgwCkNyZWF0ZWQgd2l0aCBIb2xkZXIuanMgMi42LjAuCkxlYXJuIG1vcmUgYXQgaHR0cDovL2hvbGRlcmpzLmNvbQooYykgMjAxMi0yMDE1IEl2YW4gTWFsb3BpbnNreSAtIGh0dHA6Ly9pbXNreS5jbwotLT48ZGVmcz48c3R5bGUgdHlwZT0idGV4dC9jc3MiPjwhW0NEQVRBWyNob2xkZXJfMTRlZGU0NDYwODIgdGV4dCB7IGZpbGw6I0FBQUFBQTtmb250LXdlaWdodDpib2xkO2ZvbnQtZmFtaWx5OkFyaWFsLCBIZWx2ZXRpY2EsIE9wZW4gU2Fucywgc2Fucy1zZXJpZiwgbW9ub3NwYWNlO2ZvbnQtc2l6ZToxMHB0IH0gXV0+PC9zdHlsZT48L2RlZnM+PGcgaWQ9ImhvbGRlcl8xNGVkZTQ0NjA4MiI+PHJlY3Qgd2lkdGg9IjE3MSIgaGVpZ2h0PSIxODAiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSI2MSIgeT0iOTQuNSI+MTcxeDE4MDwvdGV4dD48L2c+PC9nPjwvc3ZnPg==" data-holder-rendered="true" style="height: 80px; width: 100%; display: block;">
-	        </a>						
-	    </div>
-	</div>
-	</div>
+		<div class="col-md-3">
+			<div class="sidebar">
+				<aside class="hidden-xs">
+					<ul class="list-unstyled">
+						<li>
+							<a href="http://www.facebook.com/athingbooks" target="_blank">
+								<img class="img-responsive" src="images/fb_like.png" alt="Like A Thing Book on Facebook">
+							</a>
+						</li>
+						<li>
+							<img class="img-responsive" src="images/appstore.png" alt="Available on AppStore">
+						</li>
+					</ul>
+				</aside>
+				<aside class="hidden-xs">
+					<img data-src="holder.js/100%x180" alt="100%x180" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTcxIiBoZWlnaHQ9IjE4MCIgdmlld0JveD0iMCAwIDE3MSAxODAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzEwMCV4MTgwCkNyZWF0ZWQgd2l0aCBIb2xkZXIuanMgMi42LjAuCkxlYXJuIG1vcmUgYXQgaHR0cDovL2hvbGRlcmpzLmNvbQooYykgMjAxMi0yMDE1IEl2YW4gTWFsb3BpbnNreSAtIGh0dHA6Ly9pbXNreS5jbwotLT48ZGVmcz48c3R5bGUgdHlwZT0idGV4dC9jc3MiPjwhW0NEQVRBWyNob2xkZXJfMTRlZGU0NDYwODIgdGV4dCB7IGZpbGw6I0FBQUFBQTtmb250LXdlaWdodDpib2xkO2ZvbnQtZmFtaWx5OkFyaWFsLCBIZWx2ZXRpY2EsIE9wZW4gU2Fucywgc2Fucy1zZXJpZiwgbW9ub3NwYWNlO2ZvbnQtc2l6ZToxMHB0IH0gXV0+PC9zdHlsZT48L2RlZnM+PGcgaWQ9ImhvbGRlcl8xNGVkZTQ0NjA4MiI+PHJlY3Qgd2lkdGg9IjE3MSIgaGVpZ2h0PSIxODAiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSI2MSIgeT0iOTQuNSI+MTcxeDE4MDwvdGV4dD48L2c+PC9nPjwvc3ZnPg==" data-holder-rendered="true" style="height: 180px; width: 100%; display: block;">
+				</aside>
+				<aside>
+					<h3 class="title-bar">
+						<a href="#"><img src="images/soul_icon.png">ข่าวสาร-กิจกรรม</a>
+					</h3>
+					<div class="slider">
+					    <div class="item">
+					    	<img src="images/blog/news-1.jpg">
+							<h5><b><a href="#">เข้าพรรษา ธรรมทาน</a></b></h5>
+							<p>โครงการ "ธรรมะธรรมทาน" สู่การให้เพื่อสังคมปล่อยวาง... <a class="more" href="#">อ่านต่อ</a></p>
+					    </div>
+					    <div class="item">
+					    	<img src="images/blog/news-2.jpg">
+							<h5><a href="#">ทำบุญง่ายๆ ได้สติ</a></h5>
+							<p>ไม่ต้องลงทุนมากมาย คุณก็สามารถแจกธรรมะเป็นธรรมทานได้แล้ว!! <a class="more" href="#">อ่านต่อ</a></p>
+					    </div>
+			    	</div>
+				</aside>
+				<aside class="hidden-xs">
+					<div class="fb-page" data-href="https://www.facebook.com/pages/%E0%B8%AA%E0%B8%87%E0%B8%AA%E0%B8%B1%E0%B8%A2%E0%B8%A1%E0%B8%B1%E0%B9%89%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%B0/1579148582349642" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/pages/%E0%B8%AA%E0%B8%87%E0%B8%AA%E0%B8%B1%E0%B8%A2%E0%B8%A1%E0%B8%B1%E0%B9%89%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%B0/1579148582349642"><a href="https://www.facebook.com/pages/%E0%B8%AA%E0%B8%87%E0%B8%AA%E0%B8%B1%E0%B8%A2%E0%B8%A1%E0%B8%B1%E0%B9%89%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%B0/1579148582349642">สงสัยมั้ย?ธรรมะ</a></blockquote></div></div>
+				</aside>
+				<aside class="side-affiliate">
+					<ul>
+						<li>
+							<a href="#"><img class="img-responsive" src="images/kawaka_banner.png"></a>
+						</li>
+						<li>
+							<a href="#"><img class="img-responsive" src="images/thedaung_banner.png"></a>
+						</li>
+						<li>
+							<a href="#"><img class="img-responsive" src="images/q_a_budha_banner.png"></a>
+						</li>
+					</ul>
+				</aside>
+			</div><!-- /.sidebar -->
+		</div><!-- /.col -->
+	</div><!-- /.row -->
 </div>	 
  		
 <footer id="footer"></footer>
@@ -95,10 +394,11 @@ $(function() {
 
 <script src="venders/bootstrap/js/bootstrap.min.js" ></script>
 <script type="text/javascript" src="js/slick/slick.min.js"></script>
+<script type="text/javascript" src="js/scripts.js"></script>
 <script type="text/javascript">
 $(function() {
 	$('.product-slider').slick({
-	  dots: true,
+	  dots: false,
 	  infinite: false,
 	  speed: 300,
 	  slidesToShow: 4,
@@ -110,7 +410,7 @@ $(function() {
 	        slidesToShow: 3,
 	        slidesToScroll: 3,
 	        infinite: true,
-	        dots: true
+	        dots: false
 	      }
 	    },
 	    {
@@ -121,13 +421,17 @@ $(function() {
 	      }
 	    },
 	    {
-	      breakpoint: 480,
+	      breakpoint: 400,
 	      settings: {
 	        slidesToShow: 1,
 	        slidesToScroll: 1
 	      }
 	    }
 	  ]
+	});
+	$('aside .slider, .feature-box .slider').slick({
+		dots: true,
+		arrows: false
 	});
 });
 </script>
