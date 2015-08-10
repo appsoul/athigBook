@@ -1,43 +1,57 @@
 <div class="header-mobile visible-xs">
-<div class="container">
-	<nav class="navbar navbar-default navbar-mobile navbar-fixed-top">
-		<div class="navbar-header">
-			<a class="navbar-brand" href="/">
-				A Thing Book
-			</a>
-		</div>
-		<div class="btn-group btn-group-justified" role="group" aria-label="Navivation">
-			<div class="btn-group">
-				<a class="btn btn-warning dropdown-toggle" href="#" role="button" data-toggle="dropdown">
-					<i class="btn-icon glyphicon glyphicon-th-list"></i>เมนู
+	<div class="container">
+		<nav class="navbar navbar-default navbar-mobile navbar-fixed-top">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="/">
+					A Thing Book
 				</a>
-				<ul class="dropdown-menu">
-					<li><a href="#">หนังสือทั่วไป</a></li>
-		            <li><a href="#">หนังสือธรรมทาน</a></li>
-		            <li><a href="#">ของที่ระลึก</a></li>
-		            <li><a href="#">การ์ตูนธรรมะ</a></li>
-		            <li><a href="#">บทความ</a></li>
-		            <li><a href="#">ข่าวสาร</a></li>
-		            <li><a href="#">วิธีชำระเงิน</a></li>
-				</ul>
 			</div>
-			<a class="btn btn-warning btn-app" href="#" role="button">
-				<span class="badge bg-blue">8</span>
-				<i class="btn-icon glyphicon glyphicon-shopping-cart"></i>ตระกร้า
-			</a>
-			<div class="btn-group">
-				<a class="btn btn-warning dropdown-toggle" href="#" role="button" data-toggle="dropdown">
-					<i class="btn-icon glyphicon glyphicon-user"></i>สมาชิก
+			<div class="btn-group btn-group-justified" role="group" aria-label="Navivation">
+				<div class="btn-group">
+					<a class="btn btn-warning dropdown-toggle" href="#" role="button" data-toggle="dropdown">
+						<i class="btn-icon glyphicon glyphicon-th-list"></i>เมนู
+					</a>
+					<ul class="dropdown-menu">
+						<li><a href="#">หนังสือทั่วไป</a></li>
+			            <li><a href="#">หนังสือธรรมทาน</a></li>
+			            <li><a href="#">ของที่ระลึก</a></li>
+			            <li><a href="#">การ์ตูนธรรมะ</a></li>
+			            <li><a href="#">บทความ</a></li>
+			            <li><a href="#">ข่าวสาร</a></li>
+			            <li><a href="#">วิธีชำระเงิน</a></li>
+					</ul>
+				</div>
+				<a class="btn btn-warning btn-app" href="#" role="button">
+					<span class="badge bg-blue">8</span>
+					<i class="btn-icon glyphicon glyphicon-shopping-cart"></i>ตระกร้า
 				</a>
-				<ul class="dropdown-menu dropdown-menu-right">
-					<li><a href="#">เข้าสู่ระบบ</a></li>
-		            <li><a href="#">สมัครสมาชิก</a></li>
-		            <li><a href="#">ลืมรหัสผ่าน</a></li>
-				</ul>
+				<div class="btn-group">
+					<a class="btn btn-warning dropdown-toggle" href="#" role="button" data-toggle="dropdown">
+						<i class="btn-icon glyphicon glyphicon-user"></i>สมาชิก
+					</a>
+					<ul class="dropdown-menu dropdown-menu-right user-menu">
+						<li>
+							<form class="login-form" role="form">
+								<div class="input-group">
+									<input type="text" class="form-control" placeholder="ชื่อผู้ใช้">
+									<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+								</div>
+								<div class="input-group">
+									<input type="password" class="form-control" placeholder="รหัสผ่าน">
+									<span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+								</div>
+								<button class="btn btn-primary login-button" type="submit" role="button">ลงชื่อเข้าใช้</button>
+								<ul class="list-inline">
+									<li><a href="#">สมัครสมาชิกใหม่ </a></li>
+									<li><a href="#">ลืมรหัสผ่าน</a></li>
+								</ul>
+							</form>
+						</li>
+					</ul>
+				</div>
 			</div>
-		</div>
-	</nav>
-</div>
+		</nav>
+	</div>
 </div>
 
 <div class="container hidden-xs">
@@ -69,10 +83,11 @@
 				</div>	
 		    	<div class="col-md-12 col-sm-12">
 		    		<div class="input-group">
-						<p><a class="btn btn-primary btn-sm" href="#" role="button">เข้าสู่ระบบ</a>
-						<a class="control-label " style ="padding-left: 2px; font-size: 12px;">สมัครสมาชิกใหม่ |</a>
-					  	<a class="control-label " style ="padding-left: 2px; text-align: right; font-size: 12px;">ลืมรหัสผ่าน</a>
-				  	  </p>
+		    			<p>
+			    			<a class="btn btn-primary btn-sm" href="#" role="button">เข้าสู่ระบบ</a>
+							<a class="control-label" href="#" style ="padding-left: 2px; font-size: 12px;">สมัครสมาชิกใหม่ |</a>
+						  	<a class="control-label" href="#" style ="padding-left: 2px; text-align: right; font-size: 12px;">ลืมรหัสผ่าน</a>
+					  	</p>
 				  </div>
 				</div>						
 			</form>

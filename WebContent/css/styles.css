@@ -282,6 +282,18 @@ aside > ul > li {
 	width: 10%;
 }
 
+/* User Components */
+.user-menu {
+	width: 300px;
+	padding: 20px;
+}
+.dropdown-menu .login-form {
+	
+}
+.login-button {
+	margin: 10px 0;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
 	#footer nav > ul {
