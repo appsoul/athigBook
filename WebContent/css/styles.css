@@ -1,7 +1,28 @@
 @CHARSET "UTF-8";
 
+.navbar-primary {
+	background: #ffa500;
+	background: -moz-linear-gradient(top, #ffa500 1%, #ffa500 50%, #ff8c00 51%, #ff8c00 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#ffa500), color-stop(50%,#ffa500), color-stop(51%,#ff8c00), color-stop(100%,#ff8c00));
+	background: -webkit-linear-gradient(top, #ffa500 1%,#ffa500 50%,#ff8c00 51%,#ff8c00 100%);
+	background: -o-linear-gradient(top, #ffa500 1%,#ffa500 50%,#ff8c00 51%,#ff8c00 100%);
+	background: -ms-linear-gradient(top, #ffa500 1%,#ffa500 50%,#ff8c00 51%,#ff8c00 100%);
+	background: linear-gradient(to bottom, #ffa500 1%,#ffa500 50%,#ff8c00 51%,#ff8c00 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa500', endColorstr='#ff8c00',GradientType=0 );
+	border-radius: 0;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+.navbar-primary .navbar-nav > li > a {
+	color: #fff;
+}
+.navbar-primary .navbar-nav > li > a:hover,
+.navbar-primary .navbar-nav > li > a:focus {
+  background-color: #ff4500;
+}
+
 .textLogo {
-	padding-left: 10px;
+	padding-left: 20px;
 }
 a {
   color: #1fa4cd;
@@ -37,15 +58,8 @@ a {
 .mainMenu li a{	
 	color:white;
 }
-.nav > li > a:hover,
-.nav > li > a:focus {
-  text-decoration: none;
-  background: none;
-  text-shadow: white 0px 1px 4px;
-}
-.navbar-default .navbar-nav > li > a {
-	color: white;
-}
+
+
 .gradient{
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffb76b+45,ff7f04+93 */
 	background: rgb(255,183,107); /* Old browsers */
@@ -137,10 +151,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3f3f3', end
 }
 #footer nav a {
 	color: #333;
-}
-
-.input-group{
- padding-top:10px;
 }
 
 .slider {
@@ -300,8 +310,8 @@ a.cart-button:hover {
 .dropdown-menu .login-form {
 	
 }
-.login-button {
-	margin: 10px 0;
+#primary-nav {
+	margin-bottom: 0;
 }
 
 /* Responsive */

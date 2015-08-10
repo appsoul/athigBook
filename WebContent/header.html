@@ -32,17 +32,23 @@
 					<ul class="dropdown-menu dropdown-menu-right user-menu">
 						<li>
 							<form class="login-form" role="form">
-								<div class="input-group">
-									<input type="text" class="form-control" placeholder="ชื่อผู้ใช้">
-									<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+								<div class="form-group">
+									<div class="input-group">
+										<input type="text" class="form-control" placeholder="ชื่อผู้ใช้">
+										<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+									</div>
 								</div>
-								<div class="input-group">
-									<input type="password" class="form-control" placeholder="รหัสผ่าน">
-									<span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+								<div class="form-group">
+									<div class="input-group">
+										<input type="password" class="form-control" placeholder="รหัสผ่าน">
+										<span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+									</div>
 								</div>
-								<button class="btn btn-primary login-button" type="submit" role="button">ลงชื่อเข้าใช้</button>
+								<div class="form-group">
+									<button class="btn btn-primary login-button" type="submit" role="button">ลงชื่อเข้าใช้</button>
+								</div>
 								<ul class="list-inline">
-									<li><a href="#">สมัครสมาชิกใหม่ </a></li>
+									<li><a href="#">สมัครสมาชิก </a></li>
 									<li><a href="#">ลืมรหัสผ่าน</a></li>
 								</ul>
 							</form>
@@ -57,80 +63,71 @@
 <div class="container hidden-xs">
 	<div class="row">
 		<div class="col-md-9">
-	   		<div class="row">
-		    	<div class="col-md-12">
-		    		<img src="images/logo_athingbook.png" alt="A Thing Book Logo">
-					<img class="textLogo" src="images/logo_text_athingbook.png" alt="A Thing Book Logo" title="A Thing Book Logo">
-					<!-- <a href="" class="cartItem" title="คลิกเพื่อดูรายการสินค้า"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
-					ตะกร้าสินค้า(<span class="cartItemCount">0</span>)</a>	 -->
-					
-					<div class="text-center" style="float:right;">
-						<a class="cart-button" href="#">
-							<span>ตระกร้าสินค้า</span><br>
-				   			<span style="font-size:41px;line-height:1em;color:orange;margin: 4px 0;">8</span><br>
-				   			<span>รายการ</span><br>
-				   			<span class="caret"></span>
-			   			</a>
-			   		</div>
-		    	</div>
+			<a href="/">
+		   		<img src="images/logo_athingbook.png" alt="A Thing Book Logo" style="margin-top:10px;height:170px;">
+				<img class="textLogo" src="images/logo_text_athingbook.png" alt="A Thing Book Logo" title="A Thing Book Logo" style="height:75px">
+			</a>
+			<div class="text-center" style="float:right;margin: 20px 0;">
+				<a class="cart-button" href="#">
+					<span>ตระกร้าสินค้า</span><br>
+		   			<span style="font-size:41px;line-height:1em;color:orange;margin: 4px 0;">8</span><br>
+		   			<span>รายการ</span><br>
+		   			<span class="caret"></span>
+	   			</a>
 	   		</div>
 	   </div>
-	   <div class="row">
-	    <div class="col-md-3 col-sm-12" style="border-left: 1px dashed #eee; padding-left: 0px;">
-	    	<form role="form" id="loginForm">
-		    	<div class="col-md-12 col-sm-12">
+	    <div class="col-md-3" style="border-left: 1px dashed #eee;">
+	    	<form role="form" id="loginForm" style="padding: 10px 0;">
+	    		<p><a href="#">ลงชื่อเข้าใช้ </a> <i style="color:#d3d3d3">หรือ</i> <a href="#">สมัครสมาชิก</a></p>
+	    		<div class="form-group">
 		    		<div class="input-group">
-					  <input type="text" class="form-control" placeholder="username">
-					  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+					  <input type="text" class="form-control" placeholder="อีเมล์">
+					  <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
 				  </div>
-				</div>
-		    	<div class="col-md-12 col-sm-12">
-		    		<div class="input-group">
-				  		<input type="text" class="form-control" placeholder="Password">
-					  	<span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-				    </div>
-				</div>	
-		    	<div class="col-md-12 col-sm-12">
-		    		<div class="input-group">
-		    			<p>
-			    			<a class="btn btn-primary btn-sm" href="#" role="button">เข้าสู่ระบบ</a>
-							<a class="control-label" href="#" style ="padding-left: 2px; font-size: 12px;">สมัครสมาชิกใหม่ |</a>
-						  	<a class="control-label" href="#" style ="padding-left: 2px; text-align: right; font-size: 12px;">ลืมรหัสผ่าน</a>
-					  	</p>
-				  </div>
-				</div>						
+			  </div>
+			  <div class="form-group">
+	    		<div class="input-group">
+			  		<input type="text" class="form-control" placeholder="รหัสผ่าน">
+				  	<span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+			    </div>
+		    	</div>
+		    	<button class="btn btn-primary login-button" type="submit">ลงชื่อเข้าใช้</button>
+				<a href="#">ลืมรหัสผ่าน</a>					
 			</form>
 	    </div>
-	   </div>
 	 </div>
-	  <nav class="navbar navbar-default gradient mainMenu">     
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="true">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="navbar-collapse collapse in" id="bs-example-navbar-collapse-1" aria-expanded="true">
-          <ul class="nav navbar-nav">
-	            <li><a href="#"><i class="fa fa-camera-retro"></i></a></li>
-	            <li><a href="#">หนังสือทั่วไป</a></li>
-	            <li><a href="#">หนังสือธรรมทาน</a></li>
-	            <li><a href="#">ของที่ระลึก</a></li>
-	            <li><a href="#">การ์ตูนธรรมะ</a></li>
-	            <li><a href="#">บทความ</a></li>
-	            <li><a href="#">ข่าวสาร</a></li>
-	            <li><a href="#">วิธีชำระเงิน</a></li>
-          </ul>
-        </div><!-- /.navbar-collapse -->
-    </nav>
  </div>
- 
-<!-- HERO SLIDER -->
+
+<!-- Primary Navigation -->
+<div class="container hidden-xs">
+	<nav class="navbar navbar-primary" id="primary-nav">     
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="true">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	    </div>
+		
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="navbar-collapse collapse in" id="bs-example-navbar-collapse-1" aria-expanded="true">
+	      <ul class="nav navbar-nav">
+	         <li><a href="/"><i class="glyphicon glyphicon-home"></i> หน้าแรก</a></li>
+	         <li><a href="#">หนังสือทั่วไป</a></li>
+	         <li><a href="#">หนังสือธรรมทาน</a></li>
+	         <li><a href="#">ของที่ระลึก</a></li>
+	         <li><a href="#">การ์ตูนธรรมะ</a></li>
+	         <li><a href="#">บทความ</a></li>
+	         <li><a href="#">ข่าวสาร</a></li>
+	         <li><a href="#">วิธีชำระเงิน</a></li>
+	      </ul>
+	    </div><!-- /.navbar-collapse -->
+	</nav>
+</div>
+
+<!-- Hero Slider -->
 <div class="container">
 	<div id="hero-slider" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators hidden-xs">
