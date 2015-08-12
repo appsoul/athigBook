@@ -20,6 +20,15 @@
 .navbar-primary .navbar-nav > li > a:focus {
   background-color: #ff4500;
 }
+.navbar-mobile > .navbar-header > .navbar-brand {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+.navbar-mobile > .navbar-header > .navbar-brand > img.brand-logo {
+	display: inline-block;
+	margin-top: -5px;
+}
 
 .textLogo {
 	padding-left: 20px;
