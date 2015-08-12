@@ -335,16 +335,15 @@ a.cart-button:hover {
 	    padding-left: 5px;
 	}
 	.side-affiliate > ul > li {
-		float: left;
-		max-width: 212px;
+		text-align: center;
+	}
+	.side-affiliate > ul > li > a > img {
+		display: inline;
 	}
 }
 
 @media (max-width: 375px) {
 	.hidden-xxs {
 		display: none;
-	}
-	.side-affiliate > ul > li {
-		max-width: 114px;
 	}
 }
