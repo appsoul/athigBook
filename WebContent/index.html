@@ -30,12 +30,14 @@ $(function() {
 
 <div class="container">
 	<div class="row">
+		<!-- Main -->
 		<div class="col-md-9">
+			<!-- General Books -->
 			<section>
-				<h3 class="home-heading-bar">
+				<h4 class="title-bar">
 					<img src="images/soul_icon.png"><a href="#">หนังสือธรรมะทั่วไป</a>
-					<a class="small pull-right hidden-xxs" href="#">ดูเพิ่ม</a>
-				</h3>
+					<a class="more pull-right" href="#" title="ดูเพิ่ม"><i class="glyphicon glyphicon-menu-right"></i></a>
+				</h4>
 				<div class="slider product-slider">
 				    <div class="item">
 				    	<div class="product-details">
@@ -177,11 +179,12 @@ $(function() {
 				    </div>
 			  </div>
 		  </section>
+		  <!-- Donation Books -->
 		  <section>
-				<h3 class="home-heading-bar">
+				<h4 class="title-bar">
 					<img src="images/soul_icon.png"><a href="#">หนังสือธรรมทาน</a>
-					<a class="small pull-right hidden-xxs" href="#">ดูเพิ่ม</a>
-				</h3>
+					<a class="more pull-right" href="#" title="ดูเพิ่ม"><i class="glyphicon glyphicon-menu-right"></i></a>
+				</h4>
 				<div class="slider product-slider">
 				    <div class="item">
 				    	<div class="product-details">
@@ -275,10 +278,10 @@ $(function() {
 		  </section>
 		  <!-- Souvenir Product -->
 		  <section>
-				<h3 class="home-heading-bar">
+				<h4 class="title-bar">
 					<img src="images/soul_icon.png"><a href="#">ของที่ระลึก</a>
-					<a class="small pull-right hidden-xxs" href="#">ดูเพิ่ม</a>
-				</h3>
+					<a class="more pull-right" href="#" title="ดูเพิ่ม"><i class="glyphicon glyphicon-menu-right"></i></a>
+				</h4>
 				<div class="slider product-slider">
 				    <div class="item">
 				    	<div class="product-details">
@@ -404,11 +407,32 @@ $(function() {
 			  </div>
 		  </section>
 		  <div class="row">
-		  	<div class="col-md-6">
+			<div class="col-md-4">
+				<section class="feature-box">
+					<h4 class="title-bar">
+						<img src="images/soul_icon.png"><a href="#">ข่าวสาร-กิจกรรม</a>
+						<a class="more pull-right" href="#" title="ดูเพิ่ม"><i class="glyphicon glyphicon-menu-right"></i></a>
+					</h4>
+					<div class="slider article-slider">
+					    <div class="item">
+					    	<img src="images/blog/news-1.jpg">
+							<h5><b><a href="#">เข้าพรรษา ธรรมทาน</a></b></h5>
+							<p>โครงการ "ธรรมะธรรมทาน" สู่การให้เพื่อสังคมปล่อยวาง... <a class="more" href="#">อ่านต่อ</a></p>
+					    </div>
+					    <div class="item">
+					    	<img src="images/blog/news-2.jpg">
+							<h5><a href="#">ทำบุญง่ายๆ ได้สติ</a></h5>
+							<p>ไม่ต้องลงทุนมากมาย คุณก็สามารถแจกธรรมะเป็นธรรมทานได้แล้ว!! <a class="more" href="#">อ่านต่อ</a></p>
+					    </div>
+				   	</div>
+				</section>
+			</div>
+		  	<div class="col-md-4">
 		  		<section class="feature-box">
-				  	<h3 class="title-bar">
-						<a href="#"><img src="images/soul_icon.png">การ์ตูนธรรมะ</a>
-					</h3>
+				  	<h4 class="title-bar">
+				  		<img src="images/soul_icon.png"><a href="#">การ์ตูนธรรมะ</a>
+				  		<a class="more pull-right" href="#" title="ดูเพิ่ม"><i class="glyphicon glyphicon-menu-right"></i></a>
+					</h4>
 					<div class="slider article-slider">
 					    <div class="item">
 					    	<div class="media">
@@ -490,11 +514,12 @@ $(function() {
 			    	</div> -->
 				</section>
 		  	</div>
-		  	<div class="col-md-6">
+		  	<div class="col-md-4">
 		  		<section class="feature-box">
-				  	<h3 class="title-bar">
-						<a href="#"><img src="images/soul_icon.png">บทความน่าอ่าน</a>
-					</h3>
+				  	<h4 class="title-bar">
+						<img src="images/soul_icon.png"><a href="#">บทความน่าอ่าน</a>
+				  		<a class="more pull-right" href="#" title="ดูเพิ่ม"><i class="glyphicon glyphicon-menu-right"></i></a>
+					</h4>
 					<div class="slider article-slider">
 					    <div class="item">
 					    	<div class="media">
@@ -527,6 +552,7 @@ $(function() {
 		  	</div>
 		  </div>
 		</div>
+		<!-- Sidebar -->
 		<div class="col-md-3">
 			<div class="sidebar" id="sidebar"></div>
 		</div><!-- /.col -->
