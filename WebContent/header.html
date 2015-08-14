@@ -35,7 +35,7 @@
 							<form class="login-form" role="form">
 								<div class="form-group">
 									<div class="input-group">
-										<input type="text" class="form-control" placeholder="ชื่อผู้ใช้">
+										<input type="text" class="form-control" name="login-email" placeholder="ชื่อผู้ใช้">
 										<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
 									</div>
 								</div>
@@ -79,10 +79,10 @@
 	   </div>
 	    <div class="col-md-3" style="border-left: 1px dashed #eee;">
 	    	<form role="form" id="loginForm" style="padding: 10px 0;">
-	    		<p><a href="#">ลงชื่อเข้าใช้ </a> <i style="color:#d3d3d3">หรือ</i> <a href="#">สมัครสมาชิก</a></p>
+	    		<p><a href="#" onclick="$('#login-email').focus(); return false;">ลงชื่อเข้าใช้ </a> <i style="color:#d3d3d3">หรือ</i> <a href="#">สมัครสมาชิก</a></p>
 	    		<div class="form-group">
 		    		<div class="input-group">
-					  <input type="text" class="form-control" placeholder="อีเมล์">
+					  <input type="text" class="form-control" id="login-email" placeholder="อีเมล์">
 					  <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
 				  </div>
 			  </div>
