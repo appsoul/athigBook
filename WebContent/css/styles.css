@@ -333,6 +333,12 @@ a.cart-button {
 a.cart-button:hover {
 	background-color: #f5f5f5;
 }
+a.cart-button .item-count {
+	font-size: 41px;
+	line-height: 1em;
+	color: #ff8c00;
+	margin: 4px 0;
+}
 
 /* User Components */
 .user-menu {
