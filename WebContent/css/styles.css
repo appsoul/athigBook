@@ -161,15 +161,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3f3f3', end
 
 }
 .title-bar {
+	color: #1fa4cd;
+	line-height: 32px;
 	background: url('/images/title_bar_bg.png') repeat-x;
 	background-size: contain;
 	border: 1px solid #DBDBDB;
 	border-radius: 5px;
 	padding: 4px 8px;
 	margin: 0 0 10px;
-}
-.title-bar a {
-	line-height: 32px;
 }
 .title-bar > img {
 	height: 32px;
@@ -347,7 +346,76 @@ a.cart-button:hover {
 	margin-bottom: 0;
 }
 
+
+.list-content .media-body {
+	position: relative;
+}
+.list-content .more {
+	float: right;
+}
+.list-content .media-footer {
+	width: 100%;
+	position: absolute;
+    bottom: 0;
+	margin: 10px 0;
+}
+.grid {
+	margin: 0 -10px;
+}
+.grid > .media-list .media {
+	width: 33.3333%;
+	margin: 0;
+	padding: 10px;
+	float: left;
+}
+.grid > .media-list .media-left {
+	display: block;
+	padding: 0;
+}
+.grid > .media-list .media-object {
+	max-width: 100%;
+	margin-bottom: 10px;
+}
+.grid > .media-list .media-body {
+	height: 150px;
+}
+.grid > .media-list .media-content {
+	height: 65px;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+}
+.list-content .media-list:after {
+	content: " ";
+	clear: both;
+	display: block;
+}
+.nav-pagination {
+	text-align: center;
+}
+
 /* Responsive */
+@media (max-width: 375px) {
+	.hidden-xxs {
+		display: none;
+	}
+	.grid > .media-list .media {
+		width: 100%;
+	}
+	.grid > .media-list .media-body {
+		height: auto;
+	}
+	.grid > .media-list .media-content {
+		height: auto;
+		display: block;
+	}
+	.list-content .media-footer {
+		position: relative;
+	}
+}
+
 @media (max-width: 768px) {
 	#footer nav > ul {
 	    margin-left: -5px;
@@ -366,8 +434,4 @@ a.cart-button:hover {
 	}
 }
 
-@media (max-width: 375px) {
-	.hidden-xxs {
-		display: none;
-	}
-}
+
