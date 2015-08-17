@@ -34,11 +34,11 @@
 .grid .media-body {
 	width: auto;
 }
-.grid .media > .media-inner {
+.grid .media-inner {
 	padding: 10px;
 	border: 1px solid #eee;
 }
-.grid .media .media-heading > a {
+.grid .media-heading > a {
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
@@ -366,6 +366,9 @@ aside > ul > li {
 }
 .feature-box .media-heading {
 	font-weight: bold;
+}
+.feature-box.grid .media-heading > a {
+	white-space: normal;
 }
 
 a.cart-button {
