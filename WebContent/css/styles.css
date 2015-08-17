@@ -1,26 +1,6 @@
 @CHARSET "UTF-8";
 
-.navbar-primary {
-	background: #ffa500;
-	background: -moz-linear-gradient(top, #ffa500 1%, #ffa500 50%, #ff8c00 51%, #ff8c00 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#ffa500), color-stop(50%,#ffa500), color-stop(51%,#ff8c00), color-stop(100%,#ff8c00));
-	background: -webkit-linear-gradient(top, #ffa500 1%,#ffa500 50%,#ff8c00 51%,#ff8c00 100%);
-	background: -o-linear-gradient(top, #ffa500 1%,#ffa500 50%,#ff8c00 51%,#ff8c00 100%);
-	background: -ms-linear-gradient(top, #ffa500 1%,#ffa500 50%,#ff8c00 51%,#ff8c00 100%);
-	background: linear-gradient(to bottom, #ffa500 1%,#ffa500 50%,#ff8c00 51%,#ff8c00 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa500', endColorstr='#ff8c00',GradientType=0 );
-	border-radius: 0;
-	border-top-left-radius: 10px;
-	border-top-right-radius: 10px;
-}
-.navbar-primary .navbar-nav > li > a {
-	color: #fff;
-}
-.navbar-primary .navbar-nav > li > a:hover,
-.navbar-primary .navbar-nav > li > a:focus {
-	background-color: #ff4500;
-}
-
+/** Bootstrap Extension **/
 .navbar-mobile {
     border-width: 0 0 1px;
 	position: fixed;
@@ -47,6 +27,47 @@
 .navbar-mobile > .navbar-header > .navbar-brand > img.brand-logo {
 	display: inline-block;
 	margin-top: -5px;
+}
+.grid .media-left, .media-right, .media-body {
+	display: block;
+}
+.grid .media-body {
+	width: auto;
+}
+.grid .media > .media-inner {
+	padding: 10px;
+	border: 1px solid #eee;
+}
+.grid .media .media-heading > a {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: block;
+}
+
+a {
+  color: #1fa4cd;
+  text-decoration: none;
+}
+.navbar-primary {
+	background: #ffa500;
+	background: -moz-linear-gradient(top, #ffa500 1%, #ffa500 50%, #ff8c00 51%, #ff8c00 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#ffa500), color-stop(50%,#ffa500), color-stop(51%,#ff8c00), color-stop(100%,#ff8c00));
+	background: -webkit-linear-gradient(top, #ffa500 1%,#ffa500 50%,#ff8c00 51%,#ff8c00 100%);
+	background: -o-linear-gradient(top, #ffa500 1%,#ffa500 50%,#ff8c00 51%,#ff8c00 100%);
+	background: -ms-linear-gradient(top, #ffa500 1%,#ffa500 50%,#ff8c00 51%,#ff8c00 100%);
+	background: linear-gradient(to bottom, #ffa500 1%,#ffa500 50%,#ff8c00 51%,#ff8c00 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa500', endColorstr='#ff8c00',GradientType=0 );
+	border-radius: 0;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+.navbar-primary .navbar-nav > li > a {
+	color: #fff;
+}
+.navbar-primary .navbar-nav > li > a:hover,
+.navbar-primary .navbar-nav > li > a:focus {
+	background-color: #ff4500;
 }
 
 .navbar-mobile.navbar-default {
@@ -130,10 +151,7 @@ fieldset[disabled] .btn-secondary.active {
 .textLogo {
 	padding-left: 20px;
 }
-a {
-  color: #1fa4cd;
-  text-decoration: none;
-}
+
 .labellogin{
 	font-weight: normal;
 	padding-right: 12px;
